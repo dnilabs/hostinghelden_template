@@ -1,0 +1,93 @@
+# headercomment
+# <INCLUDE_TYPOSCRIPT: source="FILE:EXT:hostinghelden_template/Configuration/TypoScript/Extras/hostinghelden.typoscript">
+
+# overwrite page templates
+page.10 {
+  templateRootPaths {
+      0 = EXT:bootstrap_package/Resources/Private/Templates/Page/
+      1 = EXT:hostinghelden_template/Resources/Private/Templates/Page/
+      2 = {$page.fluidtemplate.templateRootPath}
+  }
+  partialRootPaths {
+      0 = EXT:bootstrap_package/Resources/Private/Partials/Page/
+      1 = EXT:hostinghelden_template/Resources/Private/Partials/Page/
+      2 = {$page.fluidtemplate.partialRootPath}
+  }
+  layoutRootPaths {
+      0 = EXT:bootstrap_package/Resources/Private/Layouts/Page/
+      1 = EXT:hostinghelden_template/Resources/Private/Layouts/Page/
+      2 = {$page.fluidtemplate.layoutRootPath}
+  }
+}
+
+# overwrite content element templates
+lib.contentElement = FLUIDTEMPLATE
+lib.contentElement {
+    templateRootPaths {
+        0 = EXT:bootstrap_package/Resources/Private/Templates/ContentElements/
+        1 = EXT:hostinghelden_template/Resources/Private/Templates/ContentElements/
+        10 = {$plugin.bootstrap_package_contentelements.view.templateRootPath}
+    }
+    partialRootPaths {
+        0 = EXT:bootstrap_package/Resources/Private/Partials/ContentElements/
+        1 = EXT:hostinghelden_template/Resources/Private/Partials/ContentElements/
+        10 = {$plugin.bootstrap_package_contentelements.view.partialRootPath}
+    }
+    layoutRootPaths {
+        0 = EXT:bootstrap_package/Resources/Private/Layouts/ContentElements/
+        1 = EXT:hostinghelden_template/Resources/Private/Layouts/ContentElements/
+        10 = {$plugin.bootstrap_package_contentelements.view.layoutRootPath}
+    }
+}
+
+# remove all css and javascripts from typo3 rendering
+# (bootstrap_package and other extensions)
+page.includeJS >
+page.includeJSLibs >
+page.includeJSFooterlibs >
+page.includeCSS >
+page.includeCSSLibs >
+page.includeCSSFooterlibs >
+
+
+# header- and footerdata
+# add all resources from s3/cloudfront
+mediaurl = USER
+mediaurl.userFunc = Hostinghelden\HostingheldenTemplate\Utility\S3UrlUtility->getPublicUrl
+
+page {
+	headerData {
+		8 < mediaurl
+		8.stdWrap.dataWrap = <link rel="shortcut icon" href="|{$page.favicon.file}" type="image/png">
+		9 < mediaurl
+		9.stdWrap.dataWrap = <link rel="apple-touch-icon" href="|{$page.favicon.file}" type="image/png" />
+		10 = USER
+		10 {
+			userFunc = Hostinghelden\HostingheldenTemplate\Utility\InlineCssUtility->render
+			stdWrap.dataWrap = <style>|</style>
+			width = {$page.theme.inlineCssWidth}
+			renderWaitTime = {$page.theme.inlineCssWaitTime}
+		}
+	}
+
+	footerData {
+		10 < mediaurl
+		10.stdWrap.dataWrap = <link rel="stylesheet" href="|{$page.theme.cssFile}" media="none" onload="if(media!='all')media='all'">
+		11 < mediaurl
+		11.stdWrap.dataWrap = <noscript><link rel="stylesheet" href="|{$page.theme.cssFile}"></noscript>
+		12 = TEXT
+		12.value = <link rel="stylesheet" href="https://fonts.googleapis.com/css?family={$page.theme.font}" media="none" onload="if(media!='all')media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family={$page.theme.font}"></noscript>
+		13 < mediaurl
+		13.stdWrap.dataWrap = <script async src="|{$page.theme.jsFile}" type="text/javascript"></script>
+	}
+
+	# Google Analytics
+	jsFooterInline {
+		10 = COA
+		10 {
+			if.isTrue = {$page.tracking.google.trackingID}
+			10 = TEXT
+			10.value = var googleAnalytics = "{$page.tracking.google.trackingID}";
+		}
+	}
+}
