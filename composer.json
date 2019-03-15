@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "type": "typo3-cms-extension",
   "description": "TYPO3 9.5 Template from Hostinghelden GmbH which customizes Bootstrap Package",
-  "minimum-stability": "dev",
+  "minimum-stability": "dev-master",
   "keywords": [
     "TYPO3 CMS",
     "bootstrap",
