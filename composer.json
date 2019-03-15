@@ -2,6 +2,7 @@
   "name": "hostinghelden/hostinghelden-template",
   "type": "typo3-cms-extension",
   "description": "TYPO3 9.5 Template from Hostinghelden GmbH which customizes Bootstrap Package",
+  "minimum-stability": "dev",
   "keywords": [
     "TYPO3 CMS",
     "bootstrap",
