@@ -1,0 +1,77 @@
+{
+  "name": "hostinghelden/hostinghelden-template",
+  "type": "typo3-cms-extension",
+  "description": "TYPO3 9.5 Template from Hostinghelden GmbH which customizes Bootstrap Package",
+  "keywords": [
+    "TYPO3 CMS",
+    "bootstrap",
+    "responsive",
+    "frontend",
+    "theme",
+    "web"
+  ],
+  "homepage": "https://github.com/dnilabs/hostinghelden_template",
+  "authors": [
+    {
+      "name": "Daniel Krahofer",
+      "email": "office@dnilabs.com",
+      "role": "Developer",
+      "homepage": "http://www.dnilabs.com/"
+    }
+  ],
+  "license": "MIT",
+  "support": {
+    "issues": "https://github.com/dnilabs/hostinghelden_template/issues"
+  },
+  "require": {
+    "php": ">=7.0.0",
+    "bk2k/bootstrap-package": "*",
+		"andersundsehr/aus-driver-amazon-s3": "^1.8",
+    "ext-dom": "*",
+    "ext-libxml": "*",
+    "ext-simplexml": "*",
+    "typo3/cms-backend": "^8.7.0 || ^9.0",
+    "typo3/cms-core": "^8.7.0 || ^9.0",
+    "typo3/cms-extbase": "^8.7.0 || ^9.0",
+    "typo3/cms-extensionmanager": "^8.7.0 || ^9.0",
+    "typo3/cms-fluid": "^8.7.0 || ^9.0",
+    "typo3/cms-frontend": "^8.7.0 || ^9.0",
+    "typo3/cms-install": "^8.7.0 || ^9.0",
+    "typo3/cms-rte-ckeditor": "^8.7.0 || ^9.0"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^2.3.1",
+    "typo3/testing-framework": "^1.2 || ^4.9"
+  },
+  "autoload": {
+    "psr-4": {
+      "Hostinghelden\\HostingheldenTemplate\\": "Classes"
+    }
+  },
+  "replace": {
+    "hostinghelden_template": "self.version",
+    "typo3-ter/hostinghelden-template": "self.version"
+  },
+  "config": {
+    "vendor-dir": ".Build/vendor",
+    "bin-dir": ".Build/bin"
+  },
+  "scripts": {
+    "post-autoload-dump": [
+      "mkdir -p .Build/Web/typo3conf/ext/",
+      "[ -L .Build/Web/typo3conf/ext/hostinghelden_template ] || ln -snvf ../../../../. .Build/Web/typo3conf/ext/hostinghelden_template"
+    ],
+    "test": [
+      ".Build/bin/phpunit Tests"
+    ]
+  },
+  "extra": {
+    "typo3/cms": {
+      "cms-package-dir": "{$vendor-dir}/typo3/cms",
+      "web-dir": ".Build/Web"
+    },
+    "pluswerk/grumphp-config": {
+      "auto-setting": false
+    }
+  }
+}
