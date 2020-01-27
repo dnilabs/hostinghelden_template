@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2013-09-19T09:11:39Z"
+          product-name="hostinghelden_template">
+        <header/>
+        <body>
+            <trans-unit id="skiptomaincontent">
+                <source>Zum Hauptinhalt springen</source>
+            </trans-unit>
+            <trans-unit id="skipnavigation">
+                <source>Navigation überspringen</source>
+            </trans-unit>
+
+            <trans-unit id="cookies">
+              <source>Wir verwenden Cookies um die Benutzerfreundlichkeit der Website zu erhöhen. Mehr Informationen dazu finden Sie in unserer </source>
+            </trans-unit>
+
+            <trans-unit id="yes">
+              <source>Ja</source>
+            </trans-unit>
+
+            <trans-unit id="clickhere">
+              <source>hier klicken!</source>
+            </trans-unit>
+
+            <trans-unit id="notdisplayed">
+              <source>kann nicht angezeigt werden, da die Datenschutzerklärung nicht akzeptiert wurde.</source>
+            </trans-unit>
+
+            <trans-unit id="facebook">
+              <source>Facebook</source>
+            </trans-unit>
+
+            <trans-unit id="googlemaps">
+              <source>Google Maps</source>
+            </trans-unit>
+
+            <trans-unit id="showagain">
+              <source>Um die Datenschutzerklärung erneut anzuzeigen</source>
+            </trans-unit>
+
+            <trans-unit id="orload">
+              <source>oder nur dieses mal laden</source>
+            </trans-unit>
+
+
+            <trans-unit id="no">
+              <source>Nein</source>
+            </trans-unit>
+
+            <trans-unit id="datenschutz">
+              <source>Datenschutzerklärung</source>
+            </trans-unit>
+
+            <trans-unit id="use_cookies">
+              <source>Datenschutzerklärung akzeptieren?</source>
+            </trans-unit>
+
+
+
+            <trans-unit id="newsletter_abmelden">
+              <source>Hier klicken um sich vom Newsletter abzumelden.</source>
+            </trans-unit>
+
+            <trans-unit id="newsletter_error">
+              <source>Newsletter wird nicht richtig angezeigt? Hier klicken!</source>
+            </trans-unit>
+
+            <trans-unit id="scrolltop">
+                <source>Scroll to top</source>
+            </trans-unit>
+
+            <trans-unit id="search">
+                <source>Suche</source>
+            </trans-unit>
+
+            <trans-unit id="linktop">
+                <source>To top</source>
+            </trans-unit>
+
+            <trans-unit id="breadcrumb">
+                <source>You are here:</source>
+            </trans-unit>
+
+            <trans-unit id="previous">
+                <source>Previous</source>
+            </trans-unit>
+
+            <trans-unit id="next">
+                <source>Next</source>
+            </trans-unit>
+
+            <trans-unit id="externalmediaunsupported">
+                <source>The external media source %s is not supported. Please provide a valid YouTube or Vimeo URL.</source>
+            </trans-unit>
+
+        </body>
+    </file>
+</xliff>

@@ -1,1 +1,9 @@
+config.admPanel = 0
+
 page.theme.cookieconsent.enable = 0
+
+# defaults for bootstrap package
+page.logo.file = dist/img/logo.png
+page.logo.fileInverted = dist/img/logo.png
+page.favicon.file = dist/img/favicon.ico
+

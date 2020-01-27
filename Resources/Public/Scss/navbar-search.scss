@@ -1,0 +1,49 @@
+#quicksearch {
+  position: relative;
+  clear: right;
+  svg {
+    left: 6px;
+    top: 7px;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  input[type=text] {
+    width: 100%;
+    padding-left: 24px;
+  }
+  input[type=submit] {
+    text-indent: -9999px;
+    background: transparent;
+    border: none;
+    width:30px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+  }
+}
+
+
+@include media-breakpoint-down(sm) {
+  #quicksearch {
+    input[type=text]::placeholder {
+      color: white;
+    }
+    float: none;
+    position: absolute;
+    right: 0;
+    top: 24px;
+    z-index: 1000;
+    line-height: 26px;
+    input[type=text] {
+      border: 1px solid white;
+      border-radius: 3px;
+      width: 27px;
+    }
+    input[type=text]:focus {
+      width: 300px;
+      border: 1px solid;
+    }
+  }
+}
+
