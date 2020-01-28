@@ -7,3 +7,7 @@ page.logo.file = dist/img/logo.png
 page.logo.fileInverted = dist/img/logo.png
 page.favicon.file = dist/img/favicon.ico
 
+#critical css
+page.theme.critical.enable = 1
+page.theme.critical.width =  1800
+page.theme.critical.waittime = 1000

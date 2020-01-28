@@ -35,6 +35,10 @@ class InlineCssUtility {
       return "";
     }
 
+    if (!isset($conf["enable"]) || $conf['enable'] == 0) {
+      return "critical css disabled";
+    }
+
     $resourceFactory = \TYPO3\CMS\Core\Resource\ResourceFactory::getInstance();
     $storage = $resourceFactory->getDefaultStorage();
     $pid = $GLOBALS['TSFE']->id;

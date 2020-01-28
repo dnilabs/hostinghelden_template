@@ -1,6 +1,6 @@
 {
   "name": "hostinghelden/hostinghelden-template",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "typo3-cms-extension",
   "description": "TYPO3 9.5 Template from Hostinghelden GmbH which customizes Bootstrap Package",
   "minimum-stability": "dev-master",

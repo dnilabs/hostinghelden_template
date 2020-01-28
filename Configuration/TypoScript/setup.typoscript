@@ -72,11 +72,13 @@ page {
 		9 < mediaurl
 		9.stdWrap.dataWrap = <link rel="apple-touch-icon" href="|{$page.favicon.file}" type="image/png" />
 		10 = USER
+
 		10 {
 			userFunc = Hostinghelden\HostingheldenTemplate\Utility\InlineCssUtility->render
 			stdWrap.dataWrap = <style>|</style>
-			width = {$page.theme.inlineCssWidth}
-			renderWaitTime = {$page.theme.inlineCssWaitTime}
+			width = {$page.theme.critical.width}
+			renderWaitTime = {$page.theme.critical.waittime}
+      enable = {$page.theme.critical.enable}
 		}
 	}
 
