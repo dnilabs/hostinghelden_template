@@ -1,0 +1,9 @@
+#####################
+#### CTYPE: HTML ####
+#####################
+
+tt_content.facebook >
+tt_content.facebook =< lib.contentElement
+tt_content.facebook {
+    templateName = Facebook
+}

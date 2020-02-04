@@ -1,0 +1,9 @@
+#####################
+#### CTYPE: HTML ####
+#####################
+
+tt_content.googlemaps >
+tt_content.googlemaps =< lib.contentElement
+tt_content.googlemaps {
+    templateName = Googlemaps
+}

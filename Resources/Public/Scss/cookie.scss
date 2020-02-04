@@ -1,0 +1,33 @@
+#cookies {
+  display: none;
+  position: fixed;
+  max-width: 300px;
+  width: auto;
+  bottom: 0;
+  background: $cookie-bg;
+  color: $cookie-color;
+  z-index: 9999;
+  padding: 20px;
+  cursor: pointer;
+  a  {
+    color: $cookie-color;
+    text-decoration: underline;
+  }
+  .accept, .decline {
+    background: $cookie-button;
+    border: none;
+    color: white;
+    padding: 7px;
+    margin: 6px 12px 0 0;
+    text-decoration: none;
+  }
+  .decline {
+    background: $cookie-button-decline;
+  }
+  p {
+    margin: 12px 0;
+  }
+}
+.cookie-warning {
+  color: $cookie-warning;
+}

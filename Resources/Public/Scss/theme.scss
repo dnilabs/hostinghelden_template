@@ -1,6 +1,6 @@
 // Variables
+@import 'variables';
 @import "../../../../bootstrap_package/Resources/Public/Scss/Theme/variables";
-
 // Bootstrap
 @import "../../../../../../../node_modules/bootstrap/scss/bootstrap";
 
@@ -44,6 +44,6 @@
 @import "../../../../bootstrap_package/Resources/Public/Scss/Theme/photoswipe";
 
 // own styles
-@import 'variables';
 @import "navbar-search";
+@import "cookie";
 @import "style";

@@ -1,0 +1,16 @@
+####################################
+#### NEW CONTENT ELEMENT WIZARD ####
+####################################
+mod.wizards.newContentElement.wizardItems.interactive {
+    elements {
+        facebook {
+            title = Facebook
+            iconIdentifier = content-bootstrappackage-card-group
+            description = add a facebook iframe to the page
+            tt_content_defValues {
+                CType = facebook
+            }
+        }
+    }
+    show := addToList(facebook)
+}

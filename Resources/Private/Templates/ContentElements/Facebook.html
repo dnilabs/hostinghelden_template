@@ -1,0 +1,14 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+<f:section name="Header" />
+<f:section name="Main">
+  <f:format.raw>{data.facebook}</f:format.raw>
+  <div class="facebook-warning cookie-warning" style="display: none";>
+    {f:translate(key: 'facebook', extensionName: 'hostinghelden_template')} {f:translate(key: 'notdisplayed', extensionName: 'hostinghelden_template')}<br />
+    {f:translate(key: 'showagain', extensionName: 'hostinghelden_template')}
+    <a class="reaccept-cookies" href="#">{f:translate(key: 'clickhere', extensionName: 'hostinghelden_template')}</a>
+    {f:translate(key: 'orload', extensionName: 'hostinghelden_template')}
+    <a class="load-facebook" href="#">{f:translate(key: 'clickhere', extensionName: 'hostinghelden_template')}</a>
+  </div>
+</f:section>
+</html>

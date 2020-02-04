@@ -18,3 +18,5 @@ $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['scheduler']['tasks']['Hostinghelden\H
  'title' => 'Disable all Newsletter Subscriptions',
  'description' => 'This Task sets all tt_records to hidden, which will disable the newsletter for that address, the addressen which dont get activated have to be deleted manually',
 );
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:' . $_EXTKEY . '/Configuration/TsConfig/Page/ContentElement/All.tsconfig">');
