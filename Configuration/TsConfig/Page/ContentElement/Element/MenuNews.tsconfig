@@ -1,0 +1,16 @@
+####################################
+#### NEW CONTENT ELEMENT WIZARD ####
+####################################
+mod.wizards.newContentElement.wizardItems.menu {
+    elements {
+        menu_news {
+            iconIdentifier = content-menu-thumbnail
+            title = News
+            description = News
+            tt_content_defValues {
+                CType = menu_news
+            }
+        }
+    }
+    show := addToList(menu_news)
+}

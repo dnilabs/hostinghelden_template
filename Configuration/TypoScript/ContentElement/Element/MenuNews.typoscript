@@ -1,0 +1,46 @@
+########################################
+#### CTYPE: MENU THUMBNAIL SUBPAGES ####
+########################################
+
+tt_content.menu_news >
+tt_content.menu_news =< lib.contentElement
+tt_content.menu_news {
+
+    ################
+    ### TEMPLATE ###
+    ################
+    templateName = MenuNews
+
+    ##########################
+    ### DATA PREPROCESSING ###
+    ##########################
+    dataProcessing {
+        10 = BK2K\BootstrapPackage\DataProcessing\FlexFormProcessor
+        20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+        20 {
+            special = directory
+            special.value.field = pages
+            dataProcessing {
+                10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                10 {
+                    references.fieldName = media
+                }
+            }
+        }
+        90 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+        90 {
+            if {
+                isTrue.field = accessibility_bypass
+            }
+            table = tt_content
+            pidInList = this
+            orderBy = sorting
+            max = 1
+            where {
+                dataWrap = colPos = {field:colPos} AND sorting > {field:sorting}
+            }
+            as = nextContentElement
+        }
+    }
+
+}

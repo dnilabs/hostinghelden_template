@@ -20,3 +20,24 @@ $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['scheduler']['tasks']['Hostinghelden\H
 );
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:' . $_EXTKEY . '/Configuration/TsConfig/Page/ContentElement/All.tsconfig">');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:' . $_EXTKEY . '/Configuration/TsConfig/Page/Mod/WebLayout/BackendLayouts.tsconfig">');
+
+/***************
+ * Register custom EXT:form configuration
+ */
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTypoScriptSetup(trim('
+    module.tx_form {
+        settings {
+            yamlConfigurations {
+                120 = EXT:hostinghelden_template/Configuration/Form/Setup.yaml
+            }
+        }
+    }
+    plugin.tx_form {
+        settings {
+            yamlConfigurations {
+                120 = EXT:hostinghelden_template/Configuration/Form/Setup.yaml
+            }
+        }
+    }
+'));

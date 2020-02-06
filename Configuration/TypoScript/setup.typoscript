@@ -1,6 +1,8 @@
 # content elements
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:hostinghelden_template/Configuration/TypoScript/ContentElement/Element/Facebook.typoscript">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:hostinghelden_template/Configuration/TypoScript/ContentElement/Element/Googlemaps.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:hostinghelden_template/Configuration/TypoScript/ContentElement/Element/MenuNews.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:hostinghelden_template/Configuration/TypoScript/ContentElement/Element/MenuNewsHome.typoscript">
 # headercomment
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:hostinghelden_template/Configuration/TypoScript/Extras/hostinghelden.typoscript">
 
@@ -75,13 +77,12 @@ page {
 		9 < mediaurl
 		9.stdWrap.dataWrap = <link rel="apple-touch-icon" href="|{$page.favicon.file}" type="image/png" />
 		10 = USER
-
 		10 {
 			userFunc = Hostinghelden\HostingheldenTemplate\Utility\InlineCssUtility->render
 			stdWrap.dataWrap = <style>|</style>
+      enable = {$page.theme.critical.enable}
 			width = {$page.theme.critical.width}
 			renderWaitTime = {$page.theme.critical.waittime}
-      enable = {$page.theme.critical.enable}
 		}
 	}
 

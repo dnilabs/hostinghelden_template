@@ -4,3 +4,22 @@ $cookie-color: #fff;
 $cookie-warning: red;
 $cookie-button: $primary;
 $cookie-button-decline: #444;
+
+$footer-sections: () !default;
+$footer-sections: map-merge((
+  content: (
+    background:                $primary,
+    color:                     #fff,
+    link-color:                #ddd
+  ),
+  bottom: (
+    background:                darken($primary, 5%),
+    color:                     #fff,
+    link-color:                #ddd
+  ),
+  meta: (
+    background:                darken($primary, 10%),
+    color:                     #fff,
+    link-color:                #ddd
+  )
+), $footer-sections);

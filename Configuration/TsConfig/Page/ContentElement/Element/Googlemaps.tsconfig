@@ -4,7 +4,7 @@
 mod.wizards.newContentElement.wizardItems.interactive {
     elements {
         googlemaps {
-            title = Facebook
+            title = Google Maps
             iconIdentifier = content-bootstrappackage-card-group
             description = add a googlemaps iframe to the page
             tt_content_defValues {

@@ -6,3 +6,24 @@
   height: 80px;
 }
 
+.footer-section-bottom,
+.footer-section-meta {
+  text-align: left;
+  @include media-breakpoint-up(md) {
+    .frame-inner {
+      display: flex;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .footer-section-bottom p {
+    margin: 0;
+  }
+  .footer-sociallinks,
+  .footer-copyright {
+    margin-top: 0 !important;
+    text-align: right;
+    flex-grow: 1;
+  }
+}

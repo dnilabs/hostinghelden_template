@@ -1,0 +1,41 @@
+.menu-news,
+.menu-news-home {
+  .news-item {
+    margin-bottom: 32px;
+  }
+  .news-image {
+    img {
+      width: 100%;
+    }
+  }
+}
+.menu-news-home {
+  .news-image {
+    margin-bottom: 16px;
+  }
+}
+@include media-breakpoint-up(md) {
+  .menu-news {
+    .news-item {
+      display: flex;
+    }
+    .news-image {
+      max-width: 33%;
+      margin-right: 24px;
+    }
+  }
+  .menu-news-home {
+    display: flex;
+    .news-item {
+      width: 33%;
+      padding: 12px;
+      margin-bottom: 32px;
+    }
+    .news-image {
+      margin-bottom: 16px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+######################################
+#### BACKENDLAYOUT: SPECIAL START ####
+######################################
+mod {
+    web_layout {
+        BackendLayouts {
+            special_start {
+                config {
+                    backend_layout {
+                        rowCount = 7
+                        rows {
+                            7 {
+                                columns {
+                                    1 {
+                                        name = Footer
+                                        colPos = 13
+                                        colspan = 12
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

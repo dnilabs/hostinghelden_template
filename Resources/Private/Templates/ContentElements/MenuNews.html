@@ -1,0 +1,31 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:bk2k="http://typo3.org/ns/BK2K/BootstrapPackage/ViewHelpers" data-namespace-typo3-fluid="true">
+  <f:layout name="Default" />
+  <f:section name="Main">
+
+  <f:if condition="{menu}">
+    <f:render partial="Menu/SkipNavigation" arguments="{_all}" />
+    <div class="menu-news">
+      <f:for each="{menu}" as="page">
+      <f:variable name="target" value="{f:if(condition: page.target, then: ' target={page.target}')}" />
+      <hr>
+      <div class="news-item">
+        <f:if condition="{page.files.0}">
+          <div class="news-image">
+            <a href="{page.link}" {target} title="{page.title}" data-toggle="tooltip">
+              <f:render partial="Media/Rendering/Image" arguments="{file: page.files.0, data: page.data, settings: settings, variants: variants}" />
+            </a>
+          </div>
+        </f:if>
+        <div class="news-text">
+          <h2><a href="{page.link}" {target} title="{page.title}" data-toggle="tooltip">{page.title}</a></h2>
+           <p class="news-date">{page.data.lastUpdated -> f:format.date(format:'d.m.Y')}</p>
+          <p>{page.data.description}</p>
+          <a class="btn btn-primary" href="{page.link}" {target} title="{page.title}" data-toggle="tooltip">mehr erfahren</a>
+        </div>
+      </div>
+      </f:for>
+    </div>
+  </f:if>
+
+  </f:section>
+</html>
