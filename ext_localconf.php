@@ -41,3 +41,15 @@ $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['scheduler']['tasks']['Hostinghelden\H
         }
     }
 '));
+
+
+/** @var \TYPO3\CMS\Extbase\SignalSlot\Dispatcher $signalSlotDispatcher */
+$signalSlotDispatcher = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(
+  \TYPO3\CMS\Extbase\SignalSlot\Dispatcher::class
+);
+$signalSlotDispatcher->connect(
+  \TYPO3\CMS\Seo\Canonical\CanonicalGenerator::class,
+  'beforeGeneratingCanonical',
+  \Hostinghelden\HostingheldenTemplate\Slot\CanonicalSlot::class,
+  'renderCanonical'
+);
