@@ -23,3 +23,11 @@ $footer-sections: map-merge((
     link-color:                #ddd
   )
 ), $footer-sections);
+
+$navbar-heights: (
+  xs: 70px,
+  sm: 75px,
+  md: 80px,
+  lg: 80px,
+  xl: 85px
+) !default;
