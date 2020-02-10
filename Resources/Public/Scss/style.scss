@@ -13,6 +13,26 @@
 }
 
 @include media-breakpoint-up(md) {
+  .textpic-ratio-1 {
+    .textmedia-gallery,
+    .textpic-gallery {
+      width: 33.33%;
+    }
+    .textmedia-text,
+    .textpic-text {
+      width: 66.66%;
+    }
+  }
+  .textpic-ratio-2 {
+    .textmedia-gallery,
+    .textpic-gallery {
+      width: 25%;
+    }
+    .textmedia-text,
+    .textpic-text {
+      width: 75%;
+    }
+  }
   .footer-section-bottom p {
     margin: 0;
   }
