@@ -81,6 +81,7 @@ page {
 			userFunc = Hostinghelden\HostingheldenTemplate\Utility\InlineCssUtility->render
 			stdWrap.dataWrap = <style>|</style>
       enable = {$page.theme.critical.enable}
+      url = {$page.theme.critical.url}
 			width = {$page.theme.critical.width}
 			renderWaitTime = {$page.theme.critical.waittime}
 		}

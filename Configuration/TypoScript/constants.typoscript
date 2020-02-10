@@ -9,6 +9,7 @@ page.favicon.file = dist/img/favicon.ico
 
 #critical css
 page.theme.critical.enable = 1
+page.theme.critical.url =  http://v9.hostinghelden.at
 page.theme.critical.width =  1800
 page.theme.critical.waittime = 1000
 
