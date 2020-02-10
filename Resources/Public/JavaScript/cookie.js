@@ -75,9 +75,12 @@ jQuery(function($){
     var googlemapswarn = $(".googlemaps-warning");
     var showMaps = function(){
       googlemapswarn.hide();
-      var src = googlemaps.data("src");
-      googlemaps.attr("src", src);
-      googlemaps.show();
+      $(googlemaps).each(function(){
+        var src = $(this).data("src");
+        $(this).attr("src", src);
+        $(this).show();
+
+      });
       return false;
     };
     $(".load-googlemaps").click(showMaps);
