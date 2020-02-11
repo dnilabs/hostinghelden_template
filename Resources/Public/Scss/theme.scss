@@ -1,6 +1,7 @@
 // Variables
 @import "../../../../bootstrap_package/Resources/Public/Scss/Theme/variables";
 @import 'variables';
+
 // Bootstrap
 @import "../../../../../../../node_modules/bootstrap/scss/bootstrap";
 
@@ -13,14 +14,12 @@
 @import "../../../../bootstrap_package/Resources/Public/Scss/Theme/card";
 @import "../../../../bootstrap_package/Resources/Public/Scss/Theme/address";
 @import "../../../../bootstrap_package/Resources/Public/Scss/Theme/buttons";
-@import "../../../../bootstrap_package/Resources/Public/Scss/Theme/body";
 @import "../../../../bootstrap_package/Resources/Public/Scss/Theme/text";
 @import "../../../../bootstrap_package/Resources/Public/Scss/Theme/media";
 @import "../../../../bootstrap_package/Resources/Public/Scss/Theme/blockquote";
 @import "../../../../bootstrap_package/Resources/Public/Scss/Theme/navbar";
 @import "../../../../bootstrap_package/Resources/Public/Scss/Theme/subnav";
 @import "../../../../bootstrap_package/Resources/Public/Scss/Theme/breadcrumb";
-@import "../../../../bootstrap_package/Resources/Public/Scss/Theme/lazyload";
 @import "../../../../bootstrap_package/Resources/Public/Scss/Theme/gallery";
 @import "../../../../bootstrap_package/Resources/Public/Scss/Theme/figure";
 @import "../../../../bootstrap_package/Resources/Public/Scss/Theme/carousel";

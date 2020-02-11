@@ -66,6 +66,7 @@ page {
       enable = {$page.theme.phone.enable}
       number = {$page.theme.phone.number}
     }
+    logo.file = {$page.logo.file}
     search {
       enable = {$page.theme.search.enable}
       pid = {$page.theme.search.pid}
