@@ -2,7 +2,6 @@
   z-index: 200;
 }
 
-
 .navbar-nav ul {
   display: none;
 }
@@ -11,16 +10,17 @@
 #phonelink {
   flex-grow: 1;
 }
+
 #quicksearch {
   position: relative;
   clear: right;
+  margin-right: 12px;
   svg {
     left: 6px;
     top: 7px;
     position: absolute;
     pointer-events: none;
   }
-
   input[type=text] {
     width: 100%;
     padding-left: 24px;
@@ -37,26 +37,25 @@
 }
 
 
-@include media-breakpoint-down(sm) {
+@include media-breakpoint-down(lg) {
   #quicksearch {
-    input[type=text]::placeholder {
-      color: white;
-    }
-    float: none;
-    position: absolute;
-    right: 0;
-    top: 24px;
-    z-index: 1000;
-    line-height: 26px;
-    input[type=text] {
-      border: 1px solid white;
-      border-radius: 3px;
-      width: 27px;
-    }
-    input[type=text]:focus {
-      width: 300px;
-      border: 1px solid;
-    }
+    width: 95px;
   }
 }
 
+@include media-breakpoint-down(sm) {
+  #quicksearch {
+    width: auto;
+    input[type=text] {
+      display: none;
+    }
+    input[type=submit] {
+      position: relative;
+    }
+  }
+}
+@include media-breakpoint-down(xs) {
+  #quicksearch {
+    margin-right:0;
+  }
+}

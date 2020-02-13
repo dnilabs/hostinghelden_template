@@ -43,7 +43,7 @@ $dropdown-width: 240px;
 }
 
 
-@include media-breakpoint-up(md) {
+@include media-breakpoint-up(lg) {
   .navbar-nav {
     .l5, .l4, .l3, .l2 {
       width: $dropdown-width;
