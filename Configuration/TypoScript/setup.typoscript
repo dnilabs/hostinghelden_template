@@ -6,6 +6,7 @@
 # headercomment
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:hostinghelden_template/Configuration/TypoScript/Extras/hostinghelden.typoscript">
 
+
 # overwrite page templates
 page.10 {
   templateRootPaths {
@@ -61,17 +62,21 @@ mediaurl = USER
 mediaurl.userFunc = Hostinghelden\HostingheldenTemplate\Utility\S3UrlUtility->getPublicUrl
 
 page {
-  10.settings {
-    phone {
-      enable = {$page.theme.phone.enable}
-      number = {$page.theme.phone.number}
-    }
-    logo.file = {$page.logo.file}
-    search {
-      enable = {$page.theme.search.enable}
-      pid = {$page.theme.search.pid}
+  10 {
+    dataProcessing.10.levels = 5
+    settings {
+      logo.file = {$page.logo.file}
+      phone {
+        enable = {$page.theme.phone.enable}
+        number = {$page.theme.phone.number}
+      }
+      search {
+        enable = {$page.theme.search.enable}
+        pid = {$page.theme.search.pid}
+      }
     }
   }
+
 	headerData {
 		8 < mediaurl
 		8.stdWrap.dataWrap = <link rel="shortcut icon" href="|{$page.favicon.file}" type="image/png">
@@ -109,3 +114,4 @@ page {
 		}
 	}
 }
+

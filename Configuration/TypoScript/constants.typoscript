@@ -15,3 +15,5 @@ page.theme.critical.waittime = 1000
 
 # news
 page.theme.news.limit = 3
+
+config.htmlTag_langKey = de-AT
