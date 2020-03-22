@@ -143,4 +143,28 @@ lib.contentElement {
             }
         }
     }
+    contentelements {
+        textpic {
+            centered_left {
+                multiplier {
+                    default = 0.75
+                }
+            }
+            centered_right {
+                multiplier {
+                    default = 0.75
+                }
+            }
+            left {
+                multiplier {
+                    default = 0.75
+                }
+            }
+            right {
+                multiplier {
+                    default = 0.75
+                }
+            }
+        }
+    }
 }
