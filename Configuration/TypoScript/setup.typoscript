@@ -130,3 +130,17 @@ page {
 	}
 }
 [end]
+
+lib.contentElement = FLUIDTEMPLATE
+lib.contentElement {
+    settings {
+        responsiveimages {
+            variants {
+              default {
+                breakpoint = 1200
+                width = 1400
+              }
+            }
+        }
+    }
+}
