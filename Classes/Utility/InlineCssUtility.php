@@ -100,7 +100,7 @@ class InlineCssUtility {
   }
 
   public function inline($cObj, $conf) {
-    $url = $conf['url'] . $GLOBALS['TSFE']->cObj->typoLink_URL([
+    $url = $GLOBALS['TSFE']->cObj->typoLink_URL([
       'forceAbsoluteUrl' => 1,
       'no_cache' => 1,
       'additionalParams' => "&inline_css=1",

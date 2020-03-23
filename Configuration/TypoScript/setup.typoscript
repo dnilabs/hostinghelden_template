@@ -71,6 +71,11 @@ page {
         enable = {$page.theme.search.enable}
         pid = {$page.theme.search.pid}
       }
+      newsletter {
+        abmeldung = {$page.theme.newsletter.abmeldung}
+        domain = {$page.theme.newsletter.domain}
+        pid = {$page.theme.newsletter.pid}
+      }
     }
   }
   headerData {
