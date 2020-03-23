@@ -41,6 +41,17 @@ $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['scheduler']['tasks']['Hostinghelden\H
         }
     }
 '));
+//
+// Register EXT:Form Hooks
+ // Set unique hash
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/form']['afterSubmit']['1'] =
+  \Hostinghelden\HostingheldenTemplate\Domain\Model\Renderable\setUniqueHash::class;
+// Set the current BaseUrl
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/form']['afterSubmit']['2'] =
+  \Hostinghelden\HostingheldenTemplate\Domain\Model\Renderable\setBaseUrl::class;
+// Get post parameter
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/form']['afterBuildingFinished']['3'] =
+  \Hostinghelden\HostingheldenTemplate\Domain\Model\Renderable\getPostParameter::class;
 
 
 $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['TYPO3\CMS\Frontend\Page\PageGenerator']['generateMetaTags']['canonical'] =
