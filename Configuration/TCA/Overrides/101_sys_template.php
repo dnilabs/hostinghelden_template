@@ -7,3 +7,9 @@ defined('TYPO3_MODE') || die();
     'Configuration/TypoScript',
     'hostinghelden template'
 );
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
+    'hostinghelden_template',
+    'Configuration/TypoScript/Newsletter',
+    'hostinghelden newsletter'
+);

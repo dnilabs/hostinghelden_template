@@ -100,12 +100,13 @@ class InlineCssUtility {
   }
 
   public function inline($cObj, $conf) {
-    $url = $GLOBALS['TSFE']->cObj->typoLink_URL([
+    $url = $conf['url'] . $GLOBALS['TSFE']->cObj->typoLink_URL([
       'forceAbsoluteUrl' => 1,
       'no_cache' => 1,
       'additionalParams' => "&inline_css=1",
       'parameter' => $conf["pid"]
     ]);
+
     $ch = \curl_init($this->inlineurl);
     $fields = http_build_query([
       'url' => $url

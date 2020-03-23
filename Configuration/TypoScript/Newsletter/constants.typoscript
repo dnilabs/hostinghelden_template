@@ -1,0 +1,7 @@
+#page.fluidtemplate.templateRootPath = EXT:hostinghelden_template/Resources/Private/Templates/Page/
+#page.fluidtemplate.partialRootPath = EXT:hostinghelden_template/Resources/Private/Partials/Page/
+#page.fluidtemplate.layoutRootPath = EXT:hostinghelden_template/Resources/Private/Layouts/Page/
+
+plugin.bootstrap_package_contentelements.view.templateRootPath = EXT:hostinghelden_template/Resources/Private/Templates/Newsletter/
+plugin.bootstrap_package_contentelements.view.layoutRootPath = EXT:hostinghelden_template/Resources/Private/Layouts/Newsletter/
+plugin.bootstrap_package_contentelements.view.partialRootPath = EXT:hostinghelden_template/Resources/Private/Partials/Newsletter/
