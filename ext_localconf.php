@@ -44,15 +44,14 @@ $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['scheduler']['tasks']['Hostinghelden\H
 //
 // Register EXT:Form Hooks
  // Set unique hash
-$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/form']['afterSubmit']['1'] =
-  \Hostinghelden\HostingheldenTemplate\Domain\Model\Renderable\setUniqueHash::class;
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/form']['afterSubmit'][1000] =
+  \Hostinghelden\HostingheldenTemplate\Domain\Model\Renderable\SetUniqueHash::class;
 // Set the current BaseUrl
-$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/form']['afterSubmit']['2'] =
-  \Hostinghelden\HostingheldenTemplate\Domain\Model\Renderable\setBaseUrl::class;
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/form']['afterSubmit'][2000] =
+  \Hostinghelden\HostingheldenTemplate\Domain\Model\Renderable\SetBaseUrl::class;
 // Get post parameter
-$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/form']['afterBuildingFinished']['3'] =
-  \Hostinghelden\HostingheldenTemplate\Domain\Model\Renderable\getPostParameter::class;
-
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/form']['afterBuildingFinished'][3000] =
+  \Hostinghelden\HostingheldenTemplate\Domain\Model\Renderable\GetPostParameter::class;
 
 $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['TYPO3\CMS\Frontend\Page\PageGenerator']['generateMetaTags']['canonical'] =
     \Hostinghelden\HostingheldenTemplate\Canonical\CanonicalGenerator::class . '->generate';
