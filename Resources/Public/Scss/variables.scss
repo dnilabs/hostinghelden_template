@@ -1,3 +1,6 @@
+$cloudfront: 'https://d25369b9qwxvrc.cloudfront.net/' !default;
+// lightbox
+$pswp__assets-path: "#{$cloudfront}dist/img/PhotoSwipe/" !default;
 // cookie
 $cookie-bg: rgba(44,44,44,.8);
 $cookie-color: #fff;
