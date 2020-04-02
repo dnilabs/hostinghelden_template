@@ -4,8 +4,9 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:hostinghelden_template/Configuration/TypoScript/ContentElement/Element/MenuNews.typoscript">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:hostinghelden_template/Configuration/TypoScript/ContentElement/Element/MenuNewsHome.typoscript">
 # headercomment
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:hostinghelden_template/Configuration/TypoScript/Extras/hostinghelden.typoscript">
-
+[applicationContext == 'Production']
+  <INCLUDE_TYPOSCRIPT: source="FILE:EXT:hostinghelden_template/Configuration/TypoScript/Extras/hostinghelden.typoscript">
+[end]
 
 # overwrite page templates
 page.10 {
