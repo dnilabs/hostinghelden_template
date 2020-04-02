@@ -17,9 +17,7 @@ config {
 }
 
 [globalVar = GP:inline_css = 1]
-#[globalVar = GP:inline_css = 1 || applicationContext == 'Development']
 [else]
-[applicationContext == 'Production']
   page >
   page = PAGE
   page.config.disableAllHeaderCode = 1
@@ -27,5 +25,4 @@ config {
   page.10.userFunc = Hostinghelden\HostingheldenTemplate\Utility\InlineCssUtility->inline
   page.10.pid = {$page.theme.newsletter.pid}
   page.10.url = {$page.theme.critical.url}
-[end]
 [global]
