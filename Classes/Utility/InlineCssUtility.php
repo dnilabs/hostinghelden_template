@@ -39,10 +39,6 @@ class InlineCssUtility {
       return "critical css disabled";
     }
 
-    if (!isset($conf["url"])) {
-      return "no baseurl given";
-    }
-
     $resourceFactory = \TYPO3\CMS\Core\Resource\ResourceFactory::getInstance();
     $storage = $resourceFactory->getDefaultStorage();
     $pid = $GLOBALS['TSFE']->id;
@@ -55,8 +51,9 @@ class InlineCssUtility {
       if ($storage->hasFile($this->buildCss)) {
         $buildcss = $storage->getFile($this->buildCss);
         if ($this->serviceAvailable()) {
-          $url = $conf['url'] . $GLOBALS['TSFE']->cObj->typoLink_URL([
+          $url = $GLOBALS['TSFE']->cObj->typoLink_URL([
             'forceAbsoluteUrl' => 1,
+            'forceAbsoluteUrl.scheme' => 'https',
             'no_cache' => 1,
             'additionalParams' => "&nocss=1",
             'parameter' => $pid
