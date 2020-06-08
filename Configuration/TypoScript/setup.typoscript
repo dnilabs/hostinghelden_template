@@ -58,6 +58,7 @@ page.includeJSFooterlibs >
 page.includeCSS >
 page.includeCSSLibs >
 page.includeCSSFooterlibs >
+page.jsInline.99 > # google analytics bp_package
 
 mediaurl = USER
 mediaurl.userFunc = Hostinghelden\HostingheldenTemplate\Utility\S3UrlUtility->getPublicUrl
