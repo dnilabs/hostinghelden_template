@@ -18,7 +18,9 @@
         </f:if>
         <div class="news-text">
           <h3><a href="{page.link}" {target} title="{page.title}" data-toggle="tooltip">{page.title}</a></h3>
+          <f:if condition="{page.data.lastUpdated}">
            <p class="news-date">{page.data.lastUpdated -> f:format.date(format:'d.m.Y')}</p>
+          </f:if>
           <p>{page.data.description}</p>
           <a class="btn btn-primary" href="{page.link}" {target} title="{page.title}" data-toggle="tooltip">mehr erfahren</a>
         </div>
