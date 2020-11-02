@@ -3,6 +3,7 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:hostinghelden_template/Configuration/TypoScript/ContentElement/Element/Googlemaps.typoscript">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:hostinghelden_template/Configuration/TypoScript/ContentElement/Element/MenuNews.typoscript">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:hostinghelden_template/Configuration/TypoScript/ContentElement/Element/MenuNewsHome.typoscript">
+
 # headercomment
 [applicationContext == 'Production']
   <INCLUDE_TYPOSCRIPT: source="FILE:EXT:hostinghelden_template/Configuration/TypoScript/Extras/hostinghelden.typoscript">

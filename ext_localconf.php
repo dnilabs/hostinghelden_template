@@ -55,3 +55,6 @@ $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/form']['afterBuildingFinished'][3
 
 $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['TYPO3\CMS\Frontend\Page\PageGenerator']['generateMetaTags']['canonical'] =
     \Hostinghelden\HostingheldenTemplate\Canonical\CanonicalGenerator::class . '->generate';
+
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['TYPO3\CMS\Frontend\Page\PageGenerator']['generateMetaTags']['metatag'] =
+    \Hostinghelden\HostingheldenTemplate\MetaTag\MetaTagGenerator::class . '->generate';
