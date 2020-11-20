@@ -21,7 +21,7 @@
           <f:if condition="{page.data.lastUpdated}">
            <p class="news-date">{page.data.lastUpdated -> f:format.date(format:'d.m.Y')}</p>
           </f:if>
-          <p>{page.data.description}</p>
+          <p>{page.data.description -> f:format.nl2br()}</p>
           <a class="btn btn-primary" href="{page.link}" {target} title="{page.title}" data-toggle="tooltip">mehr erfahren</a>
         </div>
       </div>
