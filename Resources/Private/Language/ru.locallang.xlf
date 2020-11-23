@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file target-language="ru" datatype="plaintext" original="messages" date="2013-09-19T09:11:39Z"
+          product-name="hostinghelden_template">
+        <header/>
+        <body>
+            <trans-unit id="more">
+                <target>Узнать больше</target>
+            </trans-unit>
+            <trans-unit id="skiptomaincontent">
+                <target>Узнать больше</target>
+            </trans-unit>
+            <trans-unit id="skipnavigation">
+                <target>Узнать больше</target>
+            </trans-unit>
+            <trans-unit id="cookies">
+              <target>Мы используем файлы cookie, чтобы сделать сайт более удобным для пользователей. Вы можете найти больше информации об этом здесь:</target>
+            </trans-unit>
+            <trans-unit id="yes">
+              <target>Да</target>
+            </trans-unit>
+
+            <trans-unit id="clickhere">
+              <target>Нажмите сюда!</target>
+            </trans-unit>
+
+            <trans-unit id="notdisplayed">
+              <target>невозможно отобразить, потому что политика конфиденциальности не была принята.</target>
+            </trans-unit>
+
+            <trans-unit id="facebook">
+              <target>Фейсбук</target>
+            </trans-unit>
+
+            <trans-unit id="googlemaps">
+              <target>Карты гугл</target>
+            </trans-unit>
+
+            <trans-unit id="showagain">
+              <target>Заново отобразить политику конфиденциальности</target>
+            </trans-unit>
+
+            <trans-unit id="orload">
+              <target>или просто загрузить в этот раз</target>
+            </trans-unit>
+
+
+            <trans-unit id="no">
+              <target>Нет</target>
+            </trans-unit>
+
+            <trans-unit id="datenschutz">
+              <target>Политика конфиденциональности</target>
+            </trans-unit>
+
+            <trans-unit id="use_cookies">
+              <target>Принять политику конфиденциональности?</target>
+            </trans-unit>
+
+            <trans-unit id="newsletter_abmelden">
+              <target>Если Вы желаете отписаться от рассылки, нажмите на ссылку.</target>
+            </trans-unit>
+
+            <trans-unit id="newsletter_error">
+              <target>Если рассылка отображается неправильно? Нажмите сюда!</target>
+            </trans-unit>
+
+            <trans-unit id="scrolltop">
+                <target>Прокрутить наверх</target>
+            </trans-unit>
+
+            <trans-unit id="search">
+                <target>Поиск</target>
+            </trans-unit>
+
+            <trans-unit id="linktop">
+                <target>Наверх</target>
+            </trans-unit>
+
+            <trans-unit id="breadcrumb">
+                <target>Вы находитесь здесь:</target>
+            </trans-unit>
+
+            <trans-unit id="previous">
+                <target>Предыдущая</target>
+            </trans-unit>
+
+            <trans-unit id="next">
+                <target>Cледующая</target>
+            </trans-unit>
+
+            <trans-unit id="externalmediaunsupported">
+              <target>Внешний медиаисточник %s не поддерживается. Укажите действующий URL-адрес YouTube или Vimeo.</target>
+            </trans-unit>
+
+        </body>
+    </file>
+</xliff>

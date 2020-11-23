@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file target-language="ua" datatype="plaintext" original="messages" date="2013-09-19T09:11:39Z"
+          product-name="hostinghelden_template">
+        <header/>
+        <body>
+            <trans-unit id="more">
+                <target>Дізнатися більше</target>
+            </trans-unit>
+            <trans-unit id="skiptomaincontent">
+                <target>Перейти до основної сторінки</target>
+            </trans-unit>
+            <trans-unit id="skipnavigation">
+              <target>Пропустити навігацію</target>
+            </trans-unit>
+            <trans-unit id="cookies">
+              <target>Ми використовуємо файли cookie, щоб зробити вебсайт більш зручним для користувачів. Ви можете дізнатися більше інформації тут:</target>
+            </trans-unit>
+
+            <trans-unit id="yes">
+              <target>Так</target>
+            </trans-unit>
+
+            <trans-unit id="clickhere">
+              <target>Натисніть сюди!</target>
+            </trans-unit>
+
+            <trans-unit id="notdisplayed">
+              <target>неможливо відобразити, оскільки політика конфіденційності не була прийнята.</target>
+            </trans-unit>
+
+            <trans-unit id="facebook">
+              <target>Фейсбук</target>
+            </trans-unit>
+
+            <trans-unit id="googlemaps">
+              <target>Карти гугл</target>
+            </trans-unit>
+
+            <trans-unit id="showagain">
+              <target>Знову відобразити політику конфіденційності</target>
+            </trans-unit>
+
+            <trans-unit id="orload">
+              <target>або просто завантажити цього разу</target>
+            </trans-unit>
+
+
+            <trans-unit id="no">
+              <target>Ні</target>
+            </trans-unit>
+
+            <trans-unit id="datenschutz">
+              <target>Політика конфіденційності</target>
+            </trans-unit>
+
+            <trans-unit id="use_cookies">
+              <target>Прийняти політику конфіденційності?</target>
+            </trans-unit>
+
+            <trans-unit id="newsletter_abmelden">
+              <target>Якщо Ви бажаєте відписатися від розсилки, натисніть на посилання.</target>
+            </trans-unit>
+
+            <trans-unit id="newsletter_error">
+              <target>Якщо розсилка відображається неправильно? Натисніть сюди!</target>
+            </trans-unit>
+
+            <trans-unit id="scrolltop">
+                <target>Прокрутити вгору</target>
+            </trans-unit>
+
+            <trans-unit id="search">
+                <target>Пошук</target>
+            </trans-unit>
+
+            <trans-unit id="linktop">
+                <target>Вгору</target>
+            </trans-unit>
+
+            <trans-unit id="breadcrumb">
+              <target>Ви знаходитесь тут:</target>
+            </trans-unit>
+
+            <trans-unit id="previous">
+                <target>Ви знаходитесь тут:</target>
+            </trans-unit>
+
+            <trans-unit id="next">
+                <target>Наступна</target>
+            </trans-unit>
+
+            <trans-unit id="externalmediaunsupported">
+              <target>Зовнішнє джерело носія %s не підтримується. Введіть дійсну URL-адресу YouTube або Vimeo.</target>
+            </trans-unit>
+
+        </body>
+    </file>
+</xliff>

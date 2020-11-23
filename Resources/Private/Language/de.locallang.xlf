@@ -1,99 +1,97 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-    <file source-language="en" datatype="plaintext" original="messages" date="2013-09-19T09:11:39Z"
+    <file target-language="de" datatype="plaintext" original="messages" date="2013-09-19T09:11:39Z"
           product-name="hostinghelden_template">
         <header/>
         <body>
             <trans-unit id="more">
-                <source>read more</source>
+                <target>mehr erfahren</target>
             </trans-unit>
-
             <trans-unit id="skiptomaincontent">
-                <source>jump to main content</source>
+                <target>Zum Hauptinhalt springen</target>
             </trans-unit>
             <trans-unit id="skipnavigation">
-                <source>skip navigation</source>
+                <target>Navigation überspringen</target>
             </trans-unit>
-
             <trans-unit id="cookies">
-              <source>We use cookies to make the website more user-friendly. You can find more information here:</source>
+              <target>Wir verwenden Cookies um die Benutzerfreundlichkeit der Website zu erhöhen. Mehr Informationen dazu finden Sie in unserer </target>
             </trans-unit>
 
             <trans-unit id="yes">
-              <source>yes</source>
+              <target>Ja</target>
             </trans-unit>
 
             <trans-unit id="clickhere">
-              <source>click here!</source>
+              <target>hier klicken!</target>
             </trans-unit>
 
             <trans-unit id="notdisplayed">
-              <source>cannot be displayed because the privacy policy has not been accepted. </source>
+              <target>kann nicht angezeigt werden, da die Datenschutzerklärung nicht akzeptiert wurde.</target>
             </trans-unit>
 
             <trans-unit id="facebook">
-              <source>Facebook</source>
+              <target>Facebook</target>
             </trans-unit>
 
             <trans-unit id="googlemaps">
-              <source>Google Maps</source>
+              <target>Google Maps</target>
             </trans-unit>
 
             <trans-unit id="showagain">
-              <source>To display the privacy policy again</source>
+              <target>Um die Datenschutzerklärung erneut anzuzeigen</target>
             </trans-unit>
 
             <trans-unit id="orload">
-              <source>or just load this time</source>
+              <target>oder nur dieses mal laden</target>
             </trans-unit>
 
 
             <trans-unit id="no">
-              <source>no</source>
+              <target>Nein</target>
             </trans-unit>
 
             <trans-unit id="datenschutz">
-              <source>privacy policy</source>
+              <target>Datenschutzerklärung</target>
             </trans-unit>
 
             <trans-unit id="use_cookies">
-              <source>accept privacy policy?</source>
+              <target>Datenschutzerklärung akzeptieren?</target>
             </trans-unit>
 
             <trans-unit id="newsletter_abmelden">
-              <source>If you wish to unsubscribe, please click here.</source>
+              <target>Hier klicken um sich vom Newsletter abzumelden.</target>
             </trans-unit>
 
             <trans-unit id="newsletter_error">
-              <source>Newsletter is not displayed correctly? Please click here!</source>
+              <target>Newsletter wird nicht richtig angezeigt? Hier klicken!</target>
             </trans-unit>
 
             <trans-unit id="scrolltop">
-                <source>Scroll to top</source>
+                <target>Hinaufscrollen</target>
             </trans-unit>
 
             <trans-unit id="search">
-                <source>search</source>
+                <target>Suche</target>
             </trans-unit>
 
             <trans-unit id="linktop">
-                <source>To top</source>
+                <target>Zum Anfang</target>
             </trans-unit>
 
             <trans-unit id="breadcrumb">
-                <source>You are here:</source>
+                <target>Sie sind hier:</target>
             </trans-unit>
 
             <trans-unit id="previous">
-                <source>Previous</source>
+                <target>Vorheriges</target>
             </trans-unit>
 
             <trans-unit id="next">
-                <source>Next</source>
+                <target>Next</target>
             </trans-unit>
 
             <trans-unit id="externalmediaunsupported">
-                <source>The external media source %s is not supported. Please provide a valid YouTube or Vimeo URL.</source>
+                <target>Externe Medien Ziel %s ist nicht unterstützt. Benutzen Sie eine valide Youtube oder Vimeo URL.</target>
             </trans-unit>
 
         </body>

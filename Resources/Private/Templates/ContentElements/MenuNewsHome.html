@@ -22,7 +22,7 @@
            <p class="news-date">{page.data.lastUpdated -> f:format.date(format:'d.m.Y')}</p>
           </f:if>
           <p>{page.data.description -> f:format.nl2br()}</p>
-          <a class="btn btn-primary" href="{page.link}" {target} title="{page.title}" data-toggle="tooltip">mehr erfahren</a>
+          <a class="btn btn-primary" href="{page.link}" {target} title="{page.title}" data-toggle="tooltip">{f:translate(key: 'more', extensionName: 'hostinghelden_template')}</a>
         </div>
       </div>
       </f:for>
