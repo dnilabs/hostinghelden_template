@@ -3,4 +3,4 @@ TYPO3:
     Form:
       persistenceManager:
         allowedFileMounts:
-          20: 2:/forms/
+          20: 2:forms/
